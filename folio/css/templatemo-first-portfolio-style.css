@@ -1296,7 +1296,6 @@ strong {
 
   .container-1{
     padding-bottom:6.5%;
-   
 
   }
 
@@ -1364,6 +1363,7 @@ strong {
 
 @media screen and (max-width: 1000px) {
   
+  
   .hi{
     margin-top:30px;
     right:-30px;
@@ -1386,6 +1386,18 @@ strong {
     height:16em;
     margin-top:60px;
   }
+  }
+
+  @media screen and (max-width: 1500px) {
+
+    .container-1{
+      padding-bottom:7.5%;
+  
+    }
+
+    .headinggg{
+      padding-top:6vh;
+    }
   }
 
   @media screen and (max-width: 991px) {
