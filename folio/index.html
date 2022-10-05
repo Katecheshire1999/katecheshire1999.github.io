@@ -3,10 +3,15 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=1280, initial-scale=1">
 
     <meta name="description" content="">
     <meta name="author" content="TemplateMo">
+
+    <script>var siteWidth = 1280;
+        var scale = screen.width /siteWidth;
+        
+        document.querySelector('meta[name="viewport"]').setAttribute('content', 'width='+siteWidth+', initial-scale='+scale+'');</script>
 
     <title> Kate Cheshire</title>
 
@@ -35,7 +40,7 @@
 <body>
 
 
-    <div class="container-1" style="padding-bottom: 8%; background-color: #F2E6D8;">
+    <div class="container-1" >
 
 
         <nav class="navbar navbar-expand-lg">
@@ -46,13 +51,12 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
-                <a href="index.html" class="title"
-                    >Kate
+                <a href="index.html" class="title">Kate
                     Cheshire</a>
 
                 <div class="d-flex align-items-center d-lg-none">
-                    <a class="custom-btn btn" href="#section_5">
-                        @katecheshire5
+                    <a class="custom-btn btn" href="https://www.linkedin.com/in/kate-cheshire-4b3aa6109/">
+                        @katecheshire
                     </a>
                 </div>
                 <div class="collapse navbar-collapse" id="navbarNav">
@@ -75,8 +79,8 @@
                     </ul>
 
                     <div class="d-lg-flex align-items-center d-none ms-auto">
-                        <a class="custom-btn btn" href="#section_5">
-                            @katecheshire5
+                        <a class="custom-btn btn" href="https://www.linkedin.com/in/kate-cheshire-4b3aa6109/">
+                            @katecheshire
                         </a>
                     </div>
                 </div>
@@ -87,18 +91,16 @@
     <main>
         <section id="section_1" style="height:58em;">
 
-            <div class="image"
-                style="                     box-shadow: 0 1rem 3rem rgb(0 0 0 / 18%);
+            <div class="image" style="                     box-shadow: 0 1rem 3rem rgb(0 0 0 / 18%);
             width:100vw;  height:86%; float: bottom; overflow: hidden; background-image:url(IMG_8379.JPG); background-size: cover; background-position-y: 60%; 
-"
-                id="section_1">
+" id="section_1">
 
 
                 <div class="parent" style="margin-top: 3em;">
-                    <div class="hero-text">                        <div class="hi">
+                    <div class="hero-text">
+                        <div class="hi">
                             <div class="profilepic"> <img src="profilepic.jpeg" width="100%" height="100%"></div>
-                            <h1 class="headinggg"
-                                >
+                            <h1 class="headinggg">
                                 Hello there!</h1>
                         </div>
 
@@ -126,7 +128,7 @@
 
         <section style="padding:70px;" id="section_2">
             <div class="container">
-                <div class="row">
+                <div class="row" >
 
                     <div class="col-lg-6 col-12" style="background-image:url(talk.png);
                     background-size: cover;">
@@ -139,7 +141,7 @@
                                 style="display:flex; height: 110px;background-image:url(stickies.png); border-radius: 0px; background-size: cover; ">
 
 
-                                <h2 style=" font-family: homemade apple; font-size: 45px; color: #F2EEEB;">My
+                                <h2 style=" font-family: homemade apple; font-size: 2.3em; color: #F2EEEB;">My
                                     &nbsp;Story</h2>
 
                             </div>
@@ -170,10 +172,14 @@
         </section>
 
 
-        <section style="padding:70px;" id="section_3">
+        <section  id="section_3">
+            <div style=" display: flex;
+            justify-content: center;
+            ">
+            <div class="container2"  >
             <div style="background-color: #D9BEA7; height: 90px; box-shadow: 0 1rem 3rem rgb(0 0 0 / 18%);   text-align: center; padding-top:25px;
             ">
-                <p style="font-family: 'Homemade Apple', cursive; font-size: 40px; color:white;">Featured Works</p>
+                <p style="font-family: 'Homemade Apple', cursive; font-size: 2em; color:white;">Featured Works</p>
             </div>
 
             <div class="container1" style="padding:0px;margin-bottom: 40px;">
@@ -181,27 +187,28 @@
                 <div id="myBtn2" onclick="modaltwo()" class="work" style="background-image:url(iws.png);">
                     <div class="text">IWS USER RESEARCH</div>
                 </div>
-                <div class="work1" onclick="modalthree()" style="background-image:url(bbc.png);">
+                <div id="myBtn2" onclick="modaltwohalf()" class="work1"
+                    style="background-image:url(diversity.png); background-size: cover; background-position-y: 60%;">
+                    <div class="text">JOB ROLE BIAS DETECTOR</div>
+                </div>
+                <div class="work" onclick="modalthree()" style="background-image:url(bbc.png);">
                     <div class="text">BBC SOUNDS - UI/UX DESIGN</div>
                 </div>
-                <div class="work" onclick="modalfour()" style="background-image:url(virtual.png);">
+                <div class="work1" onclick="modalfour()" style="background-image:url(virtual.png);">
                     <div class="text">BP - UX DESIGN</div>
                 </div>
-                <div class="work1" onclick="modalfive()" style="background-image:url(bank.png);">
+                <div class="work" onclick="modalfive()" style="background-image:url(bank.png);">
                     <div class="text">FINANCIAL SERVICES - VISUAL DESIGN</div>
                 </div>
-                <div class="work" style="background-image:url(bigben.png);">
+                <div class="work1" style="background-image:url(bigben.png);">
                     <div class="text">PUBLIC SECTOR - VISUAL DESIGN</div>
                 </div>
-                <div class="work1" style="background-image:url(ux.png);">
+                <div class="work" style="background-image:url(ux.png);">
                     <div class="text">PUBLIC SECTOR - UX DESIGN</div>
                 </div>
             </div>
-            <div id="myBtn" onclick="modalone()" class="work" style=" background-image:url(branding.png);">
-                <div class="text">BRANDING - VISUAL DESIGN</div>
-            </div>
-            <div class="work1" style="background-image:url(laptop.png);">
-                <div class="text">DESIGN BRIEFS</div>
+            <div id="myBtn" onclick="modalone()" class="work1" style=" background-image:url(branding.png); background-position-y: 60%;">
+                <div class="text">NON-IBM DESIGN PROJECTS</div>
             </div>
 
 
@@ -524,6 +531,109 @@
                 </div>
 
             </div>
+
+            <div id="myModal25" class="modal1">
+                <div class="modal-content1">
+                    <span class="close25">&times;</span>
+                    <div class="content" style="align-items: center;   text-align: center; ">
+                        <p
+                            style="color:#E8A785; margin-top:20px; font-family: 'Homemade Apple', cursive;  font-weight: 400; font-size: 35px;">
+                            Product Design</p>
+                        <DIV STYLE="background-color:#D9BEA7; height:1px; width:100%;"></DIV>
+
+
+                        <div class="Stanton"
+                            style="  display: flex;
+               justify-content: center;
+               align-items: center; text-align: center; margin-bottom:30px; margin-top:20px; padding-bottom:10px;background-size: cover; background-image:url(papers.png);">
+                            <p
+                                style="color:white; font-family: 'Poppins', sans-serif; font-weight: 400; padding-top:30px;letter-spacing: 2px; font-size: 20px;">
+                                JOB ROLE BIAS DETECTOR</p>
+                        </div>
+                        <p style="font-family: 'Homemade Apple', cursive; font-weight: 400; font-size: 20px;">The
+                            Challenge</p>
+                        <p
+                            style="text-align:left; font-family: 'Poppins', sans-serif; font-weight: 300;padding-left: 130px; padding-right: 130px;   font-size: 15px;">
+                            The subtle use of certain words in your role descriptions can subconsciously discourage
+                            minorities from applying for your role. On slack, we take full advantage of the ability to
+                            reach hundreds of IBMers at a time and post about role opportunities multiple times a day.
+                            But who is making these slack posts? Well, chances are they don't work in recruitment. They
+                            are business analysts, developers, designers, and the list goes on. So how can we instil
+                            best practices when it comes to creating accessible role descriptions that foster a diverse
+                            workforce?
+
+
+                        </p>
+                        <p
+                            style="margin-top:30px;  font-family: 'Homemade Apple', cursive; font-weight: 400; font-size: 20px;">
+                            My Role</p>
+                        <p
+                            style="text-align:left; font-family: 'Poppins', sans-serif; font-weight: 300; padding-left: 130px; padding-right: 130px;  font-size: 15px;">
+                            My role was to look at the US and China market, and do research on the user groups,
+                            which were DSRs (the sales representatives that work for distributors and sell Castrol
+                            products to workshops), IWS owners (the owners of the workshops) and the IWS mechanics.
+
+                        <p
+                            style="margin-top:30px; font-family: 'Homemade Apple', cursive; font-weight: 400; font-size: 20px;">
+                            The Objective</p>
+                        <p
+                            style="text-align:left;  font-family: 'Poppins', sans-serif; font-weight: 300; padding-left: 130px; padding-right: 130px;   font-size: 15px;">
+                            I did a synoptic project to analyse the current internal business environment relating to
+                            the applications process for professionals new to IBM, and how we can utilise technology to
+                            close the gap between the offer stage and the role acceptance stage in a manner that fosters
+                            diversity. I designed the entire application and built it myself, and did usability testing
+                            with IBMers. I coded the site using Python, HTML, CSS, and Javascript. I used IBM Watson to create a sentiment analysis of the job descriptions entered. 
+
+                        </p>
+                        <p
+                            style=" margin-top:30px;  font-family: 'Homemade Apple', cursive; font-weight: 400; font-size: 20px;">
+                            The Outcome</p>
+                        <p
+                            style="text-align:left; font-weight: 300; padding-left: 130px; padding-right: 130px;  font-size: 15px;">
+                            I created the Talent Acquisition Bias Detector; A simple web app that allows you to easily
+                            paste your job description in to check for any subconsciously biased language. <br> <br>
+
+                            It also includes some tips for best practice, for example, If you include overly complex or
+                            dense language, you potentially exclude candidates who are perfectly capable of doing the
+                            job but struggle with reading or language comprehension.
+
+                        <div class="ellislogo">
+
+                            <video width=500rem height=325rem controls>
+                                <source src="VIDEO.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+
+                        <p style="font-family: 'Homemade Apple', cursive; font-weight: 400; font-size: 20px;">The
+                            Feedback</p>
+
+                        <p
+                            style="padding-left: 130px; padding-right: 130px; font-family: 'Poppins', sans-serif; font-weight: 300;  font-size: 15px;">
+                            "I think this is a great project that you have been working on as it is very valuable in
+                            helping not only IBM, but all businesses become more inclusive. This will also help others
+                            develop inclusive communications elsewhere if they are using this tool regularly. Looks like
+                            a fantastic piece of work, well done!"
+
+                        </p>
+                        <p
+                            style="font-family: 'Poppins', sans-serif; font-weight: 400; letter-spacing: 1px; margin:0px; font-size: 13px;">
+                            - HANNAH BRAY</p>
+                        <p
+                            style="font-family: 'Poppins', sans-serif; font-weight: 200; letter-spacing: 1px; margin:0px; font-size: 13px;">
+                            PEER REVIEWER</p>
+
+                            <br>
+                            <br>
+
+                            <a style="font-color:black; font-weight:600;" href="./ECM3438ReportKateCheshireITConsulting.pdf">To read the full dissertation, click here!</a>
+                            <br>
+
+                    </div>
+                </div>
+
+            </div>
+
             <div id="myModal3" class="modal1">
                 <div class="modal-content1">
                     <span class="close3">&times;</span>
@@ -909,6 +1019,7 @@
                 // Get the modal
                 var modal1 = document.getElementById("myModal1");
                 var modal2 = document.getElementById("myModal2");
+                var modal25 = document.getElementById("myModal25");
                 var modal3 = document.getElementById("myModal3");
                 var modal4 = document.getElementById("myModal4");
                 var modal5 = document.getElementById("myModal5");
@@ -918,6 +1029,7 @@
                 // Get the <span> element that closes the modal
                 var span1 = document.getElementsByClassName("close1")[0];
                 var span2 = document.getElementsByClassName("close2")[0];
+                var span25 = document.getElementsByClassName("close25")[0];
                 var span3 = document.getElementsByClassName("close3")[0];
                 var span4 = document.getElementsByClassName("close4")[0];
                 var span5 = document.getElementsByClassName("close5")[0];
@@ -931,6 +1043,10 @@
 
                 function modaltwo() {
                     modal2.style.display = "block";
+                }
+
+                function modaltwohalf() {
+                    modal25.style.display = "block";
                 }
 
                 function modalthree() {
@@ -954,6 +1070,10 @@
                 span2.onclick = function () {
                     modal2.style.display = "none";
                 }
+
+                span25.onclick = function () {
+                    modal25.style.display = "none";
+                }
                 span3.onclick = function () {
                     modal3.style.display = "none";
                 }
@@ -976,6 +1096,9 @@
                     if (event.target == modal2) {
                         modal2.style.display = "none";
                     }
+                    if (event.target == modal25) {
+                        modal25.style.display = "none";
+                    }
                     if (event.target == modal3) {
                         modal3.style.display = "none";
                     }
@@ -996,20 +1119,21 @@
                     }
                 }
             </script>
-
+</div>
+</div>
 
         </section>
-
-
-        <section class="contact section-padding" style="margin-top:860px;" id="section_5">
-            <div class="heading" style="width:100vw; justify-content: center;   display: flex;">
-                <div style="width:90vw; background-color: #BF9278; height: 90px; box-shadow: 0 1rem 3rem rgb(0 0 0 / 18%); margin-bottom:60px;  text-align: center; padding-top:25px;
+<div class="container4" style="justify-content: center; display: flex;">
+<div class="container3">
+        <section class="contact section-padding"  id="section_5" style="justify-content: center;  margin: 0 auto;">
+            <div class="heading" style=" justify-content: center; margin: 0 auto;">
+                <div style="width:100%; background-color: #BF9278; height: 90px; box-shadow: 0 1rem 3rem rgb(0 0 0 / 18%); margin-bottom:60px;  text-align: center; padding-top:25px;
             ">
                     <p style="font-family: 'Homemade Apple', cursive; font-size: 40px; color:white;">Reach out!</p>
                 </div>
             </div>
 
-            <div class="container">
+            <div class="container" >
                 <div class="row" style="width:90%; ">
 
 
@@ -1021,17 +1145,17 @@
 
                     </div>
 
-                    <div class="col-lg-3 col-md-6 col-12 ps-lg-0" >
-                        <div class="contact-info d-flex flex-column" >
+                    <div class="col-lg-3 col-md-6 col-12 ps-lg-0">
+                        <div class="contact-info d-flex flex-column">
                             <strong class="site-footer-title d-block mb-3">Email</strong>
 
-                            <p class="mb-2">
+                            <p class="mb-2" style="font-size:14px;">
                                 kate.cheshire1@ibm.com </p>
 
                             <strong class="site-footer-title d-block mt-4 mb-3">Base Location</strong>
 
                             <p>
-                                <a href="mailto:hello@josh.design">
+                                <a style="font-size:14px;">
                                     Warwick
                                 </a>
                             </p>
@@ -1039,15 +1163,15 @@
                             <strong class="site-footer-title d-block mt-4 mb-3">Call</strong>
 
                             <p class="mb-0">
-                                <a href="tel: 120-240-9600">
+                                <a style="font-size:14px;">
                                     07446 949027
                                 </a>
                             </p>
                         </div>
                     </div>
 
-                    <div class="col-lg-6 col-12 mt-5 mt-lg-0" style="background-color:white; padding:20px;">
-                        <p>Hello! I’m Kate (she/her) and I’m a designer in Harrold, Bedfordshire. I love turning complex
+                    <div class="col-lg-6 col-12 mt-5 mt-lg-0" style="background-color:white;  padding:20px;">
+                        <p style="font-size:15px;">Hello! I’m Kate (she/her) and I’m a designer in Harrold, Bedfordshire. I love turning complex
                             concepts into fun, accessible and impactful designs.
                             <br> <br>
                             I've got a BSc degree in Digital and Technology Solutions from Exeter University and have
@@ -1067,7 +1191,8 @@
             </div>
             </div>
         </section>
-
+    </div>
+    </div>
     </main>
 
     <!-- JAVASCRIPT FILES -->
