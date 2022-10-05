@@ -1235,7 +1235,7 @@ strong {
 }
 
 .hi{
-  padding-left: 10em; background-color: #D9BEA7; margin-left: 2em;  display:flex; position: absolute; right: -10em; top:-3em; width: 40vw; align-items: center; height:7em; box-shadow: 0 1rem 3rem rgb(0 0 0 / 18%); PADDING:1em;
+   background-color: #D9BEA7; margin-left: 2em;  display:flex; position: absolute; right: -4em; top:-3em; width: 30vw; align-items: center; height:7em; box-shadow: 0 1rem 3rem rgb(0 0 0 / 18%); PADDING:1em;
 }
 
 .headinggg{
@@ -1388,15 +1388,11 @@ strong {
   }
   }
 
-  @media screen and (max-width: 1500px) {
+  @media screen and (min-width: 1000px) {
 
     .container-1{
       padding-bottom:7.5%;
   
-    }
-
-    .headinggg{
-      padding-top:6vh;
     }
   }
 
@@ -1424,6 +1420,7 @@ strong {
     h6 {
       font-size: 18px;
     }
+
   
     .section-padding {
       padding-top: 80px;
