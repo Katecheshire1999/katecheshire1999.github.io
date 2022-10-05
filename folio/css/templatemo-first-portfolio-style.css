@@ -499,7 +499,7 @@ strong {
   font-weight: bold;
 }
 
-.close3, .close4, .close5{
+.close3, .close4, .close5, .close6, .close7{
   color: #aaa;
   float: right;
   font-size: 28px;
@@ -515,6 +515,41 @@ strong {
 
 .close2:hover,
 .close2:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.close3:hover,
+.close3:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.close4:hover,
+.close4:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.close5:hover,
+.close5:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.close6:hover,
+.close6:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.close7:hover,
+.close7:focus {
   color: black;
   text-decoration: none;
   cursor: pointer;
