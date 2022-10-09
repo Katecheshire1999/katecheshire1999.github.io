@@ -251,11 +251,11 @@ strong {
 }
 
 .navbar .custom-btn {
-  background: transparent;
-  border-width: 2px;
+  background: var(--primary-color);
+  border-width: 0px;
   border-style: solid;
   border-color: var(--dark-color);
-  color: var(--dark-color);
+  color: #594F46;
   padding: 8px 22px;
 }
 
@@ -268,7 +268,7 @@ strong {
 .custom-btn {
   background: var(--secondary-color);
   border-radius: var(--border-radius-large);
-  color: var(--secondary-color);
+  color:#594F46;
   font-weight: var(--font-weight-bold);
   padding: 12px 24px;
 }
@@ -326,7 +326,7 @@ strong {
 
 .is-sticky .navbar .custom-btn {
   border-color: var(--dark-color);
-  color: var(--dark-color);
+  color: #594F46;
 }
 
 .is-sticky .navbar .custom-btn:hover {
@@ -451,11 +451,6 @@ strong {
   color: white;
 }
 
-.row{
-  width:85%;
-  margin: 0 auto;
-  margin-top:0px;
-}
 .row:after {
   content: "";
   display: table;
@@ -1309,16 +1304,8 @@ strong {
                  letter-spacing: .03em; margin-bottom:.8em;
 }
 
-.container2{
-  width:75%; 
-  padding-top:4%; 
-}
 
 
-.container3{
-  width:75%; 
-  padding-top:4%; 
-}
 
 /*---------------------------------------
   RESPONSIVE STYLES               
@@ -1487,7 +1474,8 @@ strong {
   
     .navbar .custom-btn {
       border-color: var(--secondary-color);
-      color: var(--secondary-color);
+      color: var(--dark-color);
+
     }
   
     .navbar-toggler .navbar-toggler-icon,
