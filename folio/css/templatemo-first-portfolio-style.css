@@ -1314,7 +1314,7 @@ strong {
   padding-bottom: 10%; 
   background-color: #F2E6D8;}
 
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 200px) {
 
   .container-1{
     padding-bottom:6.5%;
@@ -1343,8 +1343,8 @@ strong {
 
   
   .hi{
-    right: -130px;
-    width: 30vw;
+    right: -200px;
+    width: 20vw;
   }
 
   .hero-image {
