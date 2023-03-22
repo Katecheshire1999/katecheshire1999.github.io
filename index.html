@@ -3,15 +3,15 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=3826px, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <meta name="description" content="">
     <meta name="author" content="TemplateMo">
 
-    <script>var siteWidth = 1280;
+    <!-- <script>var siteWidth = 1280;
         var scale = screen.width / siteWidth;
 
-        document.querySelector('meta[name="viewport"]').setAttribute('content', 'width=' + siteWidth + ', initial-scale=' + scale + '');</script>
+        document.querySelector('meta[name="viewport"]').setAttribute('content', 'width=' + siteWidth + ', initial-scale=' + scale + '');</script> -->
 
     <title> Kate Cheshire</title>
 
@@ -34,7 +34,36 @@
 
     <link href="css/templatemo-first-portfolio-style.css" rel="stylesheet">
 
-
+<style>
+    @media screen and (max-width: 1000px) {
+        .hero-text{
+            height: 16.5em;
+        }
+    }
+    @media screen and (max-width: 700px) {
+        .hero-text{
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+    @media screen and (max-width: 550px) {
+        .hero-text{
+            margin: 150px auto;
+            width: 100%;
+            height: fit-content;
+        }
+    }
+    @media screen and (max-width: 450px) {
+        .hi{
+            right: unset;
+            margin-left: unset;
+            width: 100%;
+        }
+        .container2text{
+            height: fit-content !important;
+        }
+    }
+</style>
 </head>
 
 <body>
@@ -128,7 +157,7 @@
                 </section>
 
 
-                <section style="padding: 1% 8% 1% 8%" id="section_2">
+                <section style="padding: 4% 8% 1% 8%" id="section_2">
                     <div class="container">
                         <div class="row">
 
@@ -181,12 +210,11 @@
                 </section>
 
 
-                <section style="padding: 1% 8% 1% 8%" id="section_3">
-                    <div style=" display: flex; justify-content: center;">
-                        <div class="container2">
+                <section style="padding: 3% 8% 1% 8%" id="section_3">
+                    <div style="display: flex; justify-content: center;">
+                        <div class="container2" STYLE="width:100%;">
 
-                            <div
-                                style="background-color: #BF9278; height: 90px; box-shadow: 0 1rem 3rem rgb(0 0 0 / 18%);   text-align: center; padding-top:25px;">
+                            <div class="container2text" style="background-color: #BF9278; height: 90px; box-shadow: 0 1rem 3rem rgb(0 0 0 / 18%);   text-align: center; padding-top:25px;">
                                 <p style="font-family: 'Homemade Apple', cursive; font-size: 2em; color:white;">Featured
                                     Works</p>
                             </div>
@@ -194,45 +222,76 @@
 
 
 
-                            <div class="container1" style="padding:0px;margin-bottom: 40px;">
 
                                 <div class="projectgroup" style="margin-top:40px;">
-                                    <div style="background-color:rgba(211, 211, 211, 0.459); text-align: center;">
-                                        <p
-                                            style="font-family: 'Poppins', sans-serif; 
-                                        font-weight:300; font-size: 1em; letter-spacing: .1rem; color:BLACK; padding:10px;">
-                                            ENTERPRISE LEVEL WORK</p></div>
 
-                                        <div id="myBtn2" onclick="modaltwo()" class="work"
+                                    <div style="display: flex;">
+                                    <div id="titleee2" style="height:2px;   margin: auto;
+                                    background-color:rgba(211, 211, 211, 0.459); width: 38%; text-align: center;"></div>
+                                        <p style="margin: auto; font-family: 'Poppins', sans-serif; font-weight:300; font-size: 1em; letter-spacing: .1rem; color:BLACK; ">
+                                            ENTERPRISE LEVEL WORK</p>
+                                            <div id="titleee2" style="height:2px;  background-color:rgba(211, 211, 211, 0.459);   margin: auto;
+                                            width: 38%; text-align: center;"></div>
+                                        </div>
+                                    <div id="myBtn2" onclick="modaltwo()" class="work"
                                             style="background-image:url(iws.png);">
                                             <div class="text">IWS USER RESEARCH</div>
+                                    </div>
+
+                                    <div class="work1" onclick="modalseven()" style="background-image:url(ux.png);">
+                                        <div class="text">PUBLIC SECTOR - UX DESIGN</div>
+                                    </div>
+                                    
+                                        
+                        
+                                                
+                                    <div class="work" onclick="modalsix()" style="background-image:url(bigben.png);">
+                                        <div class="text">PUBLIC SECTOR - VISUAL DESIGN</div>
+                                    </div>
+                                        
+                                        <div class="work1" onclick="modalfour()" style="background-image:url(virtual.png);">
+                                            <div class="text">BP - UX DESIGN</div>
                                         </div>
-                                        <div id="myBtn2" onclick="modaltwohalf()" class="work1"
+                                        
+                                        <div style="display: flex; margin:auto; width:100%; padding-top:50px;">
+                                            <div  style="height:2px;   margin: auto;
+                                            background-color:rgba(211, 211, 211, 0.459); width: 40%; text-align: center;"></div>
+                                                <p style="margin: auto; font-family: 'Poppins', sans-serif; font-weight:300; font-size: 1em; letter-spacing: .1rem; color:BLACK; ">
+                                                    MIDSIZE PROJECTS</p>
+                                                    <div style="height:2px;  background-color:rgba(211, 211, 211, 0.459);   margin: auto;
+                                                    width: 40%; text-align: center;"></div>
+                                                </div>
+    
+                                        <div class="work" onclick="modalfive()" style="background-image:url(bank.png);">
+                                            <div class="text">FINANCIAL SERVICES - VISUAL DESIGN</div>
+                                        </div>
+                                        <div class="work1" onclick="modalthree()" style="background-image:url(bbc.png);">
+                                            <div class="text">BBC SOUNDS - UI/UX DESIGN</div>
+                                        </div>
+                                        
+
+                                        <div style="display: flex; margin:auto; width:100%; padding-top:50px;">
+                                            <div  style="height:2px;   margin: auto;
+                                            background-color:rgba(211, 211, 211, 0.459); width: 40%; text-align: center;"></div>
+                                                <p style="margin: auto; font-family: 'Poppins', sans-serif; font-weight:300; font-size: 1em; letter-spacing: .1rem; color:BLACK; ">
+                                                    STANDALONE WORK</p>
+                                                    <div style="height:2px;  background-color:rgba(211, 211, 211, 0.459);   margin: auto;
+                                                    width: 40%; text-align: center;"></div>
+                                        </div>
+
+                                        
+
+                                        <div id="myBtn2" onclick="modaltwohalf()" class="work"
                                             style="background-image:url(diversity.png); background-size: cover; background-position-y: 60%;">
                                             <div class="text">JOB ROLE BIAS DETECTOR</div>
-                                        </div>
                                     </div>
-                                </div>
-                                <div class="work" onclick="modalthree()" style="background-image:url(bbc.png);">
-                                    <div class="text">BBC SOUNDS - UI/UX DESIGN</div>
-                                </div>
-                                <div class="work1" onclick="modalfour()" style="background-image:url(virtual.png);">
-                                    <div class="text">BP - UX DESIGN</div>
-                                </div>
-                                
-                                <div class="work" onclick="modalfive()" style="background-image:url(bank.png);">
-                                    <div class="text">FINANCIAL SERVICES - VISUAL DESIGN</div>
-                                </div>
-                                <div class="work1" onclick="modalsix()" style="background-image:url(bigben.png);">
-                                    <div class="text">PUBLIC SECTOR - VISUAL DESIGN</div>
-                                </div>
-                                <div class="work" onclick="modalseven()" style="background-image:url(ux.png);">
-                                    <div class="text">PUBLIC SECTOR - UX DESIGN</div>
-                                </div>
+        
+                                        <div id="myBtn" onclick="modalone()" class="work1"
+                                            style=" background-image:url(branding.png); background-position-y: 60%;">
+                                            <div class="text">NON-IBM DESIGN PROJECTS</div>
+                                        </div>
 
-                                <div id="myBtn" onclick="modalone()" class="work1"
-                                    style=" background-image:url(branding.png); background-position-y: 60%;">
-                                    <div class="text">NON-IBM DESIGN PROJECTS</div>
+                                </div>
                                 </div>
 
 
@@ -526,9 +585,9 @@
                                             style="text-align:left; font-family: 'Poppins', sans-serif; font-weight: 300; padding-left: 130px; padding-right: 130px;  font-size: 15px;">
                                             My role was to look at the US and China markets, and research the user
                                             groups, which
-                                            were DSRs (the sales representatives that work for distributors and sell
+                                            were the sales representatives that work for distributors and sell
                                             Castrol
-                                            products to workshops), IWS owners (the owners of the workshops) and the IWS
+                                            products to workshops, IWS owners (the owners of the workshops) and the IWS
                                             mechanics.
 
                                         <p
@@ -539,10 +598,10 @@
                                             I went through the business vision and priorities with the product owner, to
                                             make sure
                                             we understand what benefits they want to see. I conducted user interviews
-                                            with DSRs and
+                                            with sales representatives and
                                             IWS Owners/Mechanics in the US over the phone, and conducted face-to-face
                                             video chat
-                                            research with DSRs, Owners and Mechanics in China.
+                                            research with sales representatives, Owners and Mechanics in China.
                                         </p>
                                         <p
                                             style=" margin-top:30px;  font-family: 'Homemade Apple', cursive; font-weight: 400; font-size: 20px;">
@@ -555,7 +614,7 @@
                                             I also
                                             interviewed key Castrol stakeholders to get a list of existing Castrol
                                             products offered
-                                            today to DSRs and IWS. <br> <br>
+                                            today to sales representatives and IWS. <br> <br>
 
                                             Once I had a good understanding of the user landscape, I created the USA and
                                             China-based
@@ -567,11 +626,25 @@
                                             drivers/motivations, needs,
                                             discomfort points, digital tools used by the user, and digital tools
                                             provided by
-                                            Castrol.
-                                        <div class="ellislogo"
-                                            style="margin-left:30%; height: 200px; width:40%; margin-top:50px; box-shadow: 0 1rem 3rem rgb(0 0 0 / 18%); background-position-y: 60%; background-image:url(castrolsign.png); margin-bottom:40px; background-size: cover;">
-                                        </div>
+                                            Castrol. Below are some examples of the user research I conducted, including comparisons with high performing existing applications on the market. 
 
+                                            <div style="margin-top: 7%; display: flex;justify-content:center;   position: relative;  align-items:center;">                                          
+                                        <div class="ellislogo"
+                                            style="  position: relative; height: 250px; width:450px;  box-shadow: 0 1rem 3rem rgb(0 0 0 / 18%); background-position-y: 60%; background-image:url(castrol1.png); margin-bottom:40px; background-size: cover;">
+                                        </div>
+                                        <div class="ellislogo"
+                                            style=" margin-left: 30px; height: 250px;width:450px; box-shadow: 0 1rem 3rem rgb(0 0 0 / 18%); background-position-y: 60%; background-image:url(castrol2.png); margin-bottom:40px; background-size: cover;">
+                                        </div>
+                                        </div>
+                                    
+                                        <div style="margin-bottom: 4%; display: flex;justify-content:center;   position: relative;  align-items:center;">                                          
+                                            <div class="ellislogo"
+                                            style=" margin-left: 0px; height: 250px; width:450px; box-shadow: 0 1rem 3rem rgb(0 0 0 / 18%); background-position-y: 60%; background-image:url(castrol3.png); margin-bottom:40px; background-size: cover;">
+                                        </div>
+                                        <div class="ellislogo"
+                                            style="margin-left: 30px;  margin-right: 0px; height: 250px; width:450px; box-shadow: 0 1rem 3rem rgb(0 0 0 / 18%); background-position-y: 60%; background-image:url(castrol4.png); margin-bottom:40px; background-size: cover;">
+                                        </div>
+                                    </div>
                                         <p
                                             style="font-family: 'Homemade Apple', cursive; font-weight: 400; font-size: 20px;">
                                             The
@@ -662,9 +735,9 @@
                                             style="text-align:left; font-family: 'Poppins', sans-serif; font-weight: 300; padding-left: 130px; padding-right: 130px;  font-size: 15px;">
                                             My role was to look at the US and China market, and do research on the user
                                             groups,
-                                            which were DSRs (the sales representatives that work for distributors and
+                                            which were the sales representatives that work for distributors and
                                             sell Castrol
-                                            products to workshops), IWS owners (the owners of the workshops) and the IWS
+                                            products to workshops, IWS owners (the owners of the workshops) and the IWS
                                             mechanics.
 
                                         <p
@@ -1255,11 +1328,11 @@
                                             style="text-align:left; font-family: 'Poppins', sans-serif; font-weight: 300; padding-left: 130px; padding-right: 130px;  font-size: 15px;">
                                             I worked on an agile team for a year as the sole UX designer to deliver a
                                             series of
-                                            citizen-facing services. I needed to design a user experience that would
+                                            citizen-facing services and applications. I needed to design a user experience that would
                                             work within
-                                            different benefit-claiming journeys. It also needed to remain accessible to
-                                            all citizens
-                                            and in line with the government design system.
+                                            different benefit-claiming journeys, as a part of DWP's aims to reduce duplication by sharing of common information and business process between benefit lines. It also needed to remain accessible to
+                                            all citizens and agents
+                                            and in line with the guidelines of the government design system.
                                         </p>
 
                                         <p
@@ -1267,11 +1340,11 @@
                                             My Role</p>
                                         <p
                                             style="text-align:left; font-family: 'Poppins', sans-serif; font-weight: 300; padding-left: 130px; padding-right: 130px;  font-size: 15px;">
-                                            Within the wider team, I worked in a User Centred Design team made up of
+                                            Within the wider team, I worked in a User Centred Design contingent made up of
                                             myself, a
                                             business analyst, and a user researcher. My role was to design the journeys,
                                             prototype
-                                            them, assist with usability testing, and iterate based on analysis.
+                                            them using HTML, CSS, and JavaScript, assist with usability testing, and iterate based on analysis.
                                         </p>
 
                                         <p
@@ -1284,8 +1357,7 @@
                                             self-assert their eligibility for benefit claims. The details of this
                                             project are
                                             confidential so please reach out to me for further information and evidence
-                                            of my
-                                            achievements.
+                                            of my achievements.
                                         </p>
 
 
