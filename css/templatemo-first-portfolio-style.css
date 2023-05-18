@@ -1265,7 +1265,7 @@ strong {
 }
 
 .hi{
-   background-color: #D9BEA7; margin-left: 2em;  display:flex; position: absolute; right: -4em; top:-3em; width: 30vw; align-items: center; height:7em; box-shadow: 0 1rem 3rem rgb(0 0 0 / 18%); PADDING:1em;
+   background-color: #D9BEA7; margin-left: 2em;  display:flex; position: absolute; right: 7em; top:-3em; width: 30em; align-items: center; height:7em; box-shadow: 0 1rem 3rem rgb(0 0 0 / 18%); PADDING:1em;
 }
 
 .headinggg{
@@ -1307,7 +1307,6 @@ strong {
 
 .headinggg{
   padding-bottom:0px;
-  padding-top:4vh;
 }
 
 
